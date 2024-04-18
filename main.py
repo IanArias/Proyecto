@@ -16,7 +16,7 @@ app = FastAPI(
 model = joblib.load("model/logistic_regression_model_v01.pkl")
 
 
-@app.post("/api/v1/predict-diabetes", tags=["diabetes"])
+@app.post("/api/v1/predict-diabetes", tags=["diabetes1"])
 async def predict(
     Pregnancies: float,
     Glucose: float,
